@@ -1,66 +1,172 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Radiescoon — Support & Aide</title>
+<title>Radiescoon — Oracle radiesthésique & cadrans au pendule</title>
+<meta name="description" content="Radiescoon, par Bengacoon : plus de 160 cadrans de radiesthésie à lire au pendule. Posez une question, laissez le pendule répondre. Un outil de bien-être clair et premium.">
+<link rel="icon" href="assets/favicon.png">
+<meta property="og:title" content="Radiescoon — Oracle radiesthésique">
+<meta property="og:description" content="Plus de 160 cadrans de radiesthésie au pendule : humain, animal, lieu, énergie, chakras. Un outil de bien-être et d'exploration intérieure.">
+<meta property="og:image" content="assets/icon.png">
 <style>
-  :root { --nuit:#1B2A4A; --or:#9C7A23; --sauge:#5E7355; --creme:#F6F1E6; }
-  * { box-sizing:border-box; }
-  body { margin:0; font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-    background:var(--creme); color:#26303f; line-height:1.6; }
-  header { background:var(--nuit); color:var(--creme); padding:48px 20px; text-align:center; }
-  header h1 { margin:0; font-size:2rem; letter-spacing:1px; }
-  header p { margin:8px 0 0; color:#c9bfa0; opacity:.85; letter-spacing:3px; text-transform:uppercase; font-size:.8rem; }
-  main { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
-  h2 { color:var(--nuit); border-bottom:2px solid var(--or); padding-bottom:6px; margin-top:36px; }
-  a { color:var(--or); }
-  .card { background:#fff; border:1px solid #e6ddc8; border-radius:14px; padding:20px 24px; margin:16px 0; }
-  .muted { color:var(--sauge); font-size:.92rem; }
-  footer { text-align:center; color:var(--sauge); padding:24px; font-size:.85rem; }
+  :root{
+    --nuit:#1B2A4A; --nuit-2:#141F38; --or:#9C7A23; --or-clair:#D9BE72;
+    --creme:#F6F1E6; --creme-2:#ECE4D2; --sauge:#5E7355; --texte:#26303F; --muted:#6E6A60;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--texte);background:var(--creme);line-height:1.6}
+  a{color:inherit}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+
+  header{position:sticky;top:0;z-index:20;background:rgba(246,241,230,.9);backdrop-filter:blur(8px);border-bottom:1px solid var(--creme-2)}
+  header .wrap{display:flex;align-items:center;gap:12px;height:64px}
+  header img{width:36px;height:36px;border-radius:9px}
+  header .brand{font-weight:800;font-size:19px;letter-spacing:.2px;color:var(--nuit)}
+  header .brand small{display:block;font-weight:600;font-size:11px;color:var(--muted);letter-spacing:.3px}
+  header nav{margin-left:auto;display:flex;gap:22px;font-size:14px;font-weight:600}
+  header nav a{color:var(--muted);text-decoration:none}
+  header nav a:hover{color:var(--or)}
+  @media(max-width:640px){header nav{display:none}}
+
+  .hero{background:linear-gradient(160deg,var(--nuit) 0%,var(--nuit-2) 100%);color:#fff;text-align:center;padding:74px 0 86px;position:relative;overflow:hidden}
+  .hero .arc{position:absolute;border:1px solid var(--or-clair);border-radius:50%;opacity:.10}
+  .hero .a1{width:520px;height:520px;top:-230px;left:50%;margin-left:-260px}
+  .hero .a2{width:700px;height:700px;top:-320px;left:50%;margin-left:-350px;opacity:.06}
+  .hero .logo{width:98px;height:98px;border-radius:24px;box-shadow:0 12px 34px rgba(0,0,0,.34);margin-bottom:20px;position:relative}
+  .hero .par{color:var(--or-clair);font-weight:700;font-size:13px;letter-spacing:3px;text-transform:uppercase;margin-bottom:14px;position:relative}
+  .hero h1{font-size:46px;line-height:1.05;font-weight:800;letter-spacing:-.5px;position:relative}
+  .hero p.lead{max-width:610px;margin:18px auto 0;font-size:18px;color:#D9E1EC;position:relative}
+  @media(max-width:640px){.hero h1{font-size:34px}.hero p.lead{font-size:16px}}
+
+  .stores{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:32px;position:relative}
+  .store{display:inline-flex;align-items:center;gap:10px;background:#fff;color:var(--nuit);font-weight:700;padding:13px 22px;border-radius:14px;text-decoration:none;font-size:15px;box-shadow:0 6px 18px rgba(0,0,0,.22);transition:transform .15s}
+  .store:hover{transform:translateY(-2px)}
+  .store .em{font-size:20px}
+  .store small{display:block;font-weight:600;font-size:11px;opacity:.65}
+
+  section{padding:68px 0}
+  .eyebrow{color:var(--or);font-weight:800;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;text-align:center}
+  h2{font-size:31px;font-weight:800;text-align:center;margin:8px 0 8px;letter-spacing:-.3px;color:var(--nuit)}
+  .sub{text-align:center;color:var(--muted);max-width:640px;margin:0 auto 42px;font-size:16px}
+
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  @media(max-width:860px){.grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:560px){.grid{grid-template-columns:1fr}}
+  .card{background:#fff;border:1px solid var(--creme-2);border-radius:18px;padding:26px 22px;transition:transform .15s,box-shadow .15s}
+  .card:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(27,42,74,.10)}
+  .card .em{font-size:24px;display:inline-flex;width:52px;height:52px;align-items:center;justify-content:center;border:1px solid var(--or);border-radius:14px;color:var(--or);margin-bottom:14px}
+  .card h3{font-size:18px;font-weight:800;margin-bottom:7px;color:var(--nuit)}
+  .card p{color:var(--muted);font-size:14.5px}
+
+  .premium{background:var(--creme-2)}
+  .premium .box{background:#fff;border:1px solid var(--creme-2);border-radius:22px;padding:40px 34px;text-align:center;max-width:720px;margin:0 auto}
+  .premium .price{display:inline-block;background:var(--or);color:#fff;font-weight:800;padding:6px 16px;border-radius:999px;font-size:14px;margin-bottom:14px}
+  .premium ul{list-style:none;display:inline-block;text-align:left;margin:18px auto 0;color:var(--texte)}
+  .premium li{padding:5px 0 5px 28px;position:relative;font-size:15px}
+  .premium li::before{content:"✦";position:absolute;left:0;color:var(--or)}
+  .premium .free{color:var(--muted);font-size:14px;margin-top:20px}
+
+  .privacy{background:var(--nuit);color:#D9E1EC;text-align:center}
+  .privacy h2{color:#fff}
+  .privacy .sub{color:#AEBBCB}
+
+  .support{text-align:center}
+  .support a.mail{display:inline-block;margin-top:8px;background:var(--nuit);color:#fff;padding:12px 24px;border-radius:999px;text-decoration:none;font-weight:700}
+
+  footer{background:var(--nuit-2);color:#9FB08C;text-align:center;padding:40px 0;font-size:13.5px}
+  footer a{color:var(--or-clair);text-decoration:none}
+  footer .disc{max-width:660px;margin:16px auto 0;font-size:12px;color:#7C8AA0;line-height:1.55}
 </style>
 </head>
 <body>
+
 <header>
-  <h1>Radiescoon</h1>
-  <p>Oracle radiesthésique &amp; cadrans énergétiques — par Bengacoon</p>
+  <div class="wrap">
+    <img src="assets/icon.png" alt="Radiescoon">
+    <div class="brand">Radiescoon<small>par Bengacoon</small></div>
+    <nav>
+      <a href="#fonctions">Fonctions</a>
+      <a href="#premium">Premium</a>
+      <a href="#confidentialite">Confidentialité</a>
+      <a href="#support">Support</a>
+    </nav>
+  </div>
 </header>
-<main>
-  <p>Radiescoon réunit plus de 160 cadrans de radiesthésie au pendule (humain, animal, lieu,
-  énergie, chakras, fleurs de Bach, pierres) dans une application claire et premium.</p>
 
-  <h2>Support &amp; contact</h2>
-  <div class="card">
-    <p>Une question, un bug, une suggestion ? Écrivez-nous :</p>
-    <p><strong>✉️ <a href="mailto:jdviallat@gmail.com">jdviallat@gmail.com</a></strong></p>
-    <p class="muted">Nous répondons généralement sous 48&nbsp;heures.</p>
+<div class="hero">
+  <span class="arc a1"></span><span class="arc a2"></span>
+  <div class="wrap">
+    <img class="logo" src="assets/icon.png" alt="Radiescoon">
+    <div class="par">par Bengacoon</div>
+    <h1>Radiescoon</h1>
+    <p class="lead">L'oracle radiesthésique de poche. Posez une question, laissez le pendule répondre — sur soi, un proche, un animal ou un lieu.</p>
+    <div class="stores">
+      <a class="store" href="https://apps.apple.com/app/id6792037355"><span class="em"></span><span><small>Télécharger sur l'</small>App&nbsp;Store</span></a>
+      <a class="store" href="https://play.google.com/store/apps/details?id=com.bengacoon.radiescoon"><span class="em">▶</span><span><small>Disponible sur</small>Google&nbsp;Play</span></a>
+    </div>
   </div>
+</div>
 
-  <h2>Questions fréquentes</h2>
-  <div class="card">
-    <p><strong>L'application est-elle gratuite ?</strong><br>
-    Oui : la consultation de tous les cadrans est gratuite. Un achat unique « Premium » (7,90&nbsp;€)
-    débloque l'enregistrement des lectures, les dossiers, les séances avant/après et les exports.</p>
-    <p><strong>Comment restaurer mon achat ?</strong><br>
-    Écran « Premium » → « Restaurer un achat ».</p>
+<section id="fonctions">
+  <div class="wrap">
+    <div class="eyebrow">Ce que fait l'application</div>
+    <h2>Poser une question, laisser le pendule répondre</h2>
+    <p class="sub">Plus de 160 cadrans de radiesthésie, réunis dans un écrin clair et premium. Consultation gratuite ; la pratique en Premium.</p>
+    <div class="grid">
+      <div class="card"><span class="em">☉</span><h3>Lire au pendule</h3><p>Un grand cadran plein écran, à lire au pendule physique ou en tirage intuitif animé.</p></div>
+      <div class="card"><span class="em">✦</span><h3>160+ cadrans</h3><p>13 modules : humain, animal, lieu, temps, énergie, chakras, âmes &amp; mémoires, mondes subtils…</p></div>
+      <div class="card"><span class="em">◐</span><h3>Apprendre le pendule</h3><p>Les fondamentaux pas à pas : oui/non, oui/non/peut-être, échelle de 0 à 100 %.</p></div>
+      <div class="card"><span class="em">❖</span><h3>Dossiers &amp; séances</h3><p>Pour les praticiens : suivez vos sujets, menez des séances avant/après, exportez en PDF et Excel.</p></div>
+      <div class="card"><span class="em">✎</span><h3>Éditeur de cadran</h3><p>Créez vos propres cadrans à partir de nos gabarits — nom, segments, couleurs — et tirez-les au pendule.</p></div>
+      <div class="card"><span class="em">🔒</span><h3>Coffre chiffré</h3><p>Vos données restent sur votre téléphone ; les sauvegardes sont protégées par mot de passe (AES-256).</p></div>
+    </div>
   </div>
+</section>
 
-  <h2>Nature de l'outil</h2>
-  <div class="card">
-    <p>Radiescoon est un <strong>outil de bien-être et d'exploration intérieure</strong>. Il ne
-    constitue en aucun cas un avis ou un diagnostic médical, vétérinaire, psychologique ou juridique,
-    et ne remplace pas l'avis d'un professionnel. Pour tout symptôme physique — y compris chez un
-    animal — consultez un professionnel de santé ou un vétérinaire.</p>
+<section class="premium" id="premium">
+  <div class="wrap">
+    <div class="box">
+      <span class="price">Achat unique · 7,90 €</span>
+      <h2>Premium, sans abonnement</h2>
+      <p class="sub" style="margin-bottom:0">Consulter et tirer tous les cadrans reste gratuit. Le Premium débloque la pratique :</p>
+      <ul>
+        <li>Enregistrer ses lectures et tenir un journal</li>
+        <li>Dossiers clients (personnes, animaux, lieux)</li>
+        <li>Séances guidées avant / après</li>
+        <li>Synthèses éditables &amp; exports PDF / Excel</li>
+        <li>Éditeur de cadran perso &amp; coffre chiffré</li>
+      </ul>
+      <p class="free">Un seul paiement, à vie. Aucun abonnement.</p>
+    </div>
   </div>
+</section>
 
-  <h2>Confidentialité</h2>
-  <div class="card">
-    <p>Radiescoon fonctionne <strong>hors ligne</strong> : vos dossiers, séances et notes sont
-    stockés uniquement sur votre appareil. Aucune donnée personnelle n'est transmise à nos serveurs.
-    Les achats intégrés sont traités par l'App Store et notre prestataire de gestion d'achats
-    (RevenueCat), sans lien avec votre identité.</p>
+<section class="privacy" id="confidentialite">
+  <div class="wrap">
+    <div class="eyebrow" style="color:var(--or-clair)">Confidentialité</div>
+    <h2>Rien ne quitte votre téléphone</h2>
+    <p class="sub">Radiescoon fonctionne hors ligne : vos dossiers, séances et notes sont stockés uniquement sur votre appareil. Aucune donnée personnelle n'est transmise à nos serveurs. Vos sauvegardes peuvent être chiffrées par mot de passe.</p>
   </div>
-</main>
-<footer>Radiescoon — par Bengacoon · © 2026</footer>
+</section>
+
+<section class="support" id="support">
+  <div class="wrap">
+    <div class="eyebrow">Support &amp; aide</div>
+    <h2>Une question&nbsp;? Écrivez-nous</h2>
+    <p class="sub" style="margin-bottom:0">Nous répondons généralement sous 48&nbsp;heures.</p>
+    <a class="mail" href="mailto:jdviallat@gmail.com">✉️ jdviallat@gmail.com</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <strong>Radiescoon</strong> — par Bengacoon · © 2026<br>
+    <a href="mailto:jdviallat@gmail.com">jdviallat@gmail.com</a>
+    <p class="disc">Radiescoon est un outil de bien-être et d'exploration intérieure. Il ne constitue pas un avis ou un diagnostic médical, vétérinaire, psychologique ou juridique et ne remplace pas l'avis d'un professionnel. Pour tout symptôme — y compris chez un animal — consultez un professionnel de santé ou un vétérinaire.</p>
+  </div>
+</footer>
+
 </body>
 </html>

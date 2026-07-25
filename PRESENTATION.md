@@ -8,7 +8,7 @@ Une application mobile qui réunit plus de **160 cadrans de radiesthésie** dans
 
 ## ✨ En bref
 
-- **13 modules**, **161 cadrans** (humain, animal, lieu, temps, énergie, chakras, fleurs de Bach, pierres…).
+- **13 modules**, **161 cadrans** (humain, animal, lieu, temps, énergie, chakras, âmes & mémoires…).
 - **4 types de cadrans** (gabarits) : jauge, éventail, roue, binaire.
 - **Gratuit** pour consulter et tirer tous les cadrans ; **Premium** (achat unique 7,90 €) pour la pratique.
 - **9 langues** d'interface : français, anglais, allemand, italien, portugais, espagnol, suédois, norvégien, finnois.
@@ -52,7 +52,7 @@ Une application mobile qui réunit plus de **160 cadrans de radiesthésie** dans
 | Gabarit | Usage | Exemple |
 |---|---|---|
 | **Jauge** | une mesure sur une échelle 0–100 | Taux de vitalité, taux vibratoire |
-| **Éventail** | un choix parmi plusieurs (secteurs colorés) | Émotion dominante, fleur de Bach |
+| **Éventail** | un choix parmi plusieurs (secteurs colorés) | Émotion dominante, besoin du moment |
 | **Roue** | un choix réparti en cercle | Chakra concerné |
 | **Binaire** | Oui · Peut‑être · Non | Réponse rapide |
 
@@ -61,9 +61,7 @@ Une application mobile qui réunit plus de **160 cadrans de radiesthésie** dans
 ### Les 13 modules
 Apprendre le pendule · Humain · Animaux · Bilan énergétique · Temps · Géobiologie · Âmes, karma & mémoires · Mondes subtils · Auto‑contrôle · Oracle des Résonances · Amour & Relations · Chemin de vie · Travail & Projets.
 
-### Référentiels intégrés
-- **38 fleurs de Bach** (7 familles + Rescue), filtrables par famille ou par chakra.
-- **50 pierres** (lithothérapie), filtrables par chakra ou par besoin.
+### Le module Animaux
 - **Chakras de l'animal** : planches chien & chat (7 chakras + brachial + secondaires) et séances animales avant/après.
 
 ---
