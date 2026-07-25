@@ -22,3 +22,7 @@ d'un professionnel. Pour tout symptôme — y compris chez un animal — consult
 
 L'application fonctionne hors ligne : dossiers, séances et notes restent sur votre appareil.
 Aucune donnée personnelle transmise à nos serveurs. Achats gérés par l'App Store / RevenueCat.
+
+## 📖 Présentation complète
+
+Descriptif détaillé de l'application + historique des versions : **[PRESENTATION.md](PRESENTATION.md)**
