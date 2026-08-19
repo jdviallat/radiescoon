@@ -1,6 +1,6 @@
 {
   "version": "1.9.0",
-  "versionCode": 16,
+  "versionCode": 17,
   "url": "https://github.com/jdviallat/radiescoon/releases/latest",
   "notes": "Séances construites (lecture → relecture), planche oui/non de radiesthésie, module Présences & entités, calibrage du pendule, épeler au pendule, journal de tirages, plus de couleur.",
   "mandatory": false
