@@ -1,7 +1,7 @@
 {
-  "version": "1.10.0",
-  "versionCode": 18,
+  "version": "1.10.1",
+  "versionCode": 19,
   "url": "https://github.com/jdviallat/radiescoon/releases/latest",
-  "notes": "Un seul format de cadran (planche au pendule), séances expliquées, chakras animaux doubles (dessus/dessous), export PDF/Excel.",
+  "notes": "Correctif : la licence hors-store est conservée définitivement (plus à ressaisir). Mises à jour en place.",
   "mandatory": false
 }
