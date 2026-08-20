@@ -1,0 +1,8 @@
+{
+  "version": "1.10.1",
+  "versionCode": 19,
+  "url": "https://github.com/jdviallat/radiescoon/releases/download/v1.10.1/Radiescoon-1.10.1-rel.apk",
+  "notes": "161 cadrans répartis en 13 modules, éditeur de cadrans personnels, séances avant/après avec synthèse, exports PDF et Excel.",
+  "mandatory": false,
+  "minVersion": "1.0.0"
+}

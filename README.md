@@ -1,28 +1,23 @@
-# Radiescoon — Support
+# Radiescoon — mises à jour & binaires
 
-**Radiescoon** — Oracle radiesthésique & cadrans énergétiques, par **Bengacoon**.
+Dépôt **public** de distribution de l'application **Radiescoon** (par Bengacoon) —
+oracle radiesthésique & cadrans énergétiques.
 
-Plus de 160 cadrans de radiesthésie au pendule : humain, animal, lieu, énergie, chakras,
-fleurs de Bach, pierres. Consultation gratuite ; Premium (achat unique 7,90 €) pour
-enregistrer, gérer des dossiers, mener des séances avant/après et exporter.
+- 📱 **Télécharger l'APK** → [Releases](https://github.com/jdviallat/radiescoon/releases/latest)
+- 🌐 **Site officiel** → https://jdviallat.github.io/radiescoon-site/
+- 🔒 **Politique de confidentialité** → https://jdviallat.github.io/radiescoon-site/privacy.html
 
-## 📩 Support
+## Contenu
 
-Une question, un bug, une suggestion ? **jdviallat@gmail.com** (réponse sous ~48 h).
+| Fichier | Rôle |
+|---|---|
+| `latest.json` | manifeste de mise à jour interrogé par l'app (`expo.extra.updateManifestUrl`) |
+| `PRESENTATION.md` | présentation complète de l'application |
+| `docs/` | documentation |
 
-👉 **Page d'aide complète : https://jdviallat.github.io/radiescoon/**
+**URL du manifeste** : https://jdviallat.github.io/radiescoon/latest.json
 
-## ℹ️ Nature de l'outil
-
-Radiescoon est un **outil de bien-être et d'exploration intérieure**. Il ne constitue pas un
-avis ou diagnostic médical, vétérinaire, psychologique ou juridique et ne remplace pas l'avis
-d'un professionnel. Pour tout symptôme — y compris chez un animal — consultez un professionnel.
-
-## 🔒 Confidentialité
-
-L'application fonctionne hors ligne : dossiers, séances et notes restent sur votre appareil.
-Aucune donnée personnelle transmise à nos serveurs. Achats gérés par l'App Store / RevenueCat.
-
-## 📖 Présentation complète
-
-Descriptif détaillé de l'application + historique des versions : **[PRESENTATION.md](PRESENTATION.md)**
+> Seul l'**APK public** est distribué ici. Les AAB Play Store et les builds iOS partent
+> directement vers Google Play et l'App Store, jamais sur GitHub.
+>
+> Le **code source est privé**.
