@@ -1,8 +1,7 @@
 {
-  "version": "1.10.1",
-  "versionCode": 19,
-  "url": "https://github.com/jdviallat/radiescoon/releases/download/v1.10.1/Radiescoon-1.10.1-rel.apk",
-  "notes": "161 cadrans répartis en 13 modules, éditeur de cadrans personnels, séances avant/après avec synthèse, exports PDF et Excel.",
-  "mandatory": false,
-  "minVersion": "1.0.0"
+  "version": "1.11.0",
+  "versionCode": 20,
+  "url": "https://github.com/jdviallat/radiescoon/releases/latest",
+  "notes": "Refonte visuelle : tous les cadrans adoptent le style « Force de mon intuition » (secteurs colorés pleins). Les cadrans de mesure gardent leur échelle chiffrée 0→100.",
+  "mandatory": false
 }
