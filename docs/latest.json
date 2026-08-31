@@ -1,7 +1,7 @@
 {
-  "version": "1.11.0",
-  "versionCode": 20,
+  "version": "1.11.1",
+  "versionCode": 21,
   "url": "https://github.com/jdviallat/radiescoon/releases/latest",
-  "notes": "Refonte visuelle : tous les cadrans adoptent le style « Force de mon intuition » (secteurs colorés pleins). Les cadrans de mesure gardent leur échelle chiffrée 0→100.",
+  "notes": "Navigation plus rapide : les fiches des modules se replient (accès direct aux cadrans). Échelles affinées pour les chakras et la compatibilité.",
   "mandatory": false
 }
