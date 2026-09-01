@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="fr"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Radiescoon — Guide & documentation</title>
+<meta name="description" content="Guide complet de Radiescoon : cadrans, tirage au pendule, séances guidées, clients, journal, export, sauvegarde, premium et mises à jour.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+<style>
+ :root{--bg:#FBF9F3;--card:#FFF;--border:#E4DDCB;--nuit:#1B2A4A;--gold:#9C7A23;--or2:#C9A24B;--sauge:#5E7355;--violet:#6E5A8A;--muted:#6A675E;--ink:#26241f}
+ @media (prefers-color-scheme: dark){:root{--bg:#0F1830;--card:#18213a;--border:#2A3556;--nuit:#EDE4CE;--gold:#D9BE7A;--or2:#C9A24B;--sauge:#8AA07E;--violet:#9886B8;--muted:#9AA1AE;--ink:#E9E3D5}}
+ *{box-sizing:border-box} html{scroll-behavior:smooth}
+ body{margin:0;background:var(--bg);color:var(--ink);font-family:'Cormorant Garamond',Georgia,serif;font-size:18px;line-height:1.55}
+ header.hero{text-align:center;padding:40px 20px 18px;border-bottom:1px solid var(--border)}
+ .kick{font-family:'Cinzel',serif;letter-spacing:5px;font-size:12px;color:var(--gold);text-transform:uppercase}
+ h1{font-family:'Cormorant Garamond';font-size:44px;font-weight:600;color:var(--nuit);margin:8px 0 4px}
+ .hero p{max-width:640px;margin:6px auto 0;color:var(--muted);font-size:19px}
+ .layout{display:grid;grid-template-columns:250px 1fr;gap:32px;max-width:1120px;margin:0 auto;padding:26px 20px 60px}
+ nav.toc{position:sticky;top:18px;align-self:start;font-size:16px}
+ nav.toc a{display:block;color:var(--muted);text-decoration:none;padding:5px 10px;border-left:2px solid transparent;border-radius:0 8px 8px 0}
+ nav.toc a:hover{color:var(--nuit);border-left-color:var(--or2);background:rgba(201,162,75,.08)}
+ nav.toc .grp{font-family:'Cinzel',serif;font-size:11px;letter-spacing:2px;color:var(--gold);margin:14px 0 4px 10px;text-transform:uppercase}
+ main{min-width:0}
+ section{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:22px 24px;margin-bottom:18px;scroll-margin-top:16px}
+ section h2{font-family:'Cormorant Garamond';font-size:28px;font-weight:600;color:var(--nuit);margin:0 0 4px;display:flex;align-items:center;gap:10px}
+ section h2 .ico{color:var(--gold)}
+ section h3{font-family:'Cormorant Garamond';font-size:21px;color:var(--nuit);margin:16px 0 4px}
+ p{margin:8px 0}
+ ul{margin:8px 0;padding-left:22px}li{margin:4px 0}
+ .pill{display:inline-block;border:1px solid var(--or2);border-radius:16px;padding:2px 10px;font-size:14px;color:var(--gold);margin:2px 4px 2px 0}
+ .tip{background:rgba(110,90,138,.10);border:1px solid var(--violet);border-radius:12px;padding:12px 14px;margin:12px 0;font-size:16px}
+ .warn{background:rgba(156,122,35,.10);border:1px solid var(--gold);border-radius:12px;padding:12px 14px;margin:12px 0;font-size:16px}
+ table{width:100%;border-collapse:collapse;margin:10px 0;font-size:16px}
+ th,td{border:1px solid var(--border);padding:8px 10px;text-align:left}th{color:var(--gold);font-family:'Cinzel',serif;font-size:12px;letter-spacing:1px;text-transform:uppercase}
+ code{background:rgba(128,128,128,.15);border-radius:6px;padding:1px 6px;font-size:15px}
+ footer{text-align:center;color:var(--muted);font-size:15px;padding:24px 20px 50px;border-top:1px solid var(--border)}
+ @media(max-width:820px){.layout{grid-template-columns:1fr}nav.toc{position:static}h1{font-size:34px}}
+</style></head>
+<body>
+<header class="hero">
+  <div class="kick">Radiescoon</div>
+  <h1>Guide & documentation</h1>
+  <p>Tout ce que vous pouvez faire avec Radiescoon — et comment. La radiesthésie au pendule, ses cadrans, ses séances, en clair.</p>
+</header>
+<div class="layout">
+ <nav class="toc">
+   <div class="grp">Débuter</div>
+   <a href="#intro">Qu'est-ce que Radiescoon</a>
+   <a href="#demarrer">Premiers pas</a>
+   <a href="#pendule">Tenir son pendule</a>
+   <div class="grp">Utiliser</div>
+   <a href="#cadrans">Les cadrans</a>
+   <a href="#modes">Tirage & pendule</a>
+   <a href="#seances">Les séances guidées</a>
+   <a href="#clients">Clients & séances</a>
+   <a href="#journal">Journal & évolution</a>
+   <a href="#export">Export & partage</a>
+   <div class="grp">Gérer</div>
+   <a href="#reglages">Réglages</a>
+   <a href="#sauvegarde">Sauvegarde</a>
+   <a href="#premium">Premium & licence</a>
+   <a href="#maj">Mises à jour</a>
+   <div class="grp">Cadre</div>
+   <a href="#ethique">Bon usage</a>
+   <a href="#faq">FAQ</a>
+ </nav>
+ <main>
+
+  <section id="intro">
+    <h2><span class="ico">✦</span> Qu'est-ce que Radiescoon</h2>
+    <p>Radiescoon est une application de <strong>radiesthésie au pendule</strong> : une bibliothèque de <strong>cadrans</strong> (planches de mesure) répartis en <strong>21 modules</strong> — humain, animal, habitat, géobiologie, temps, âmes & mémoires, décisions, amour, chemin de vie, alimentation, objets, végétal, oracle… — pour poser une question et lire la réponse au pendule.</p>
+    <p>L'app sert aussi bien le <strong>praticien</strong> (dossiers clients, séances avant/après, synthèses, exports) que la <strong>pratique personnelle</strong> (journal, cadran du jour, apprentissage).</p>
+    <p><span class="pill">278 cadrans</span><span class="pill">21 modules</span><span class="pill">9 langues</span><span class="pill">Hors-ligne</span></p>
+  </section>
+
+  <section id="demarrer">
+    <h2><span class="ico">◈</span> Premiers pas</h2>
+    <ol>
+      <li><strong>Découverte</strong> — l'écran d'accueil propose une entrée en matière et un accès rapide aux modules.</li>
+      <li><strong>Choisir un module</strong> (ex. « Humain ») puis un <strong>cadran</strong> (ex. « Force de mon intuition »).</li>
+      <li><strong>Poser sa question</strong> mentalement, puis lire au pendule ou faire un tirage.</li>
+      <li><strong>Enregistrer</strong> la lecture (Premium) dans votre profil, un client ou le journal.</li>
+    </ol>
+    <div class="tip">Astuce : sur l'écran d'un module, les fiches (Essence, Symbolique, Précautions…) se <strong>replient</strong> — touchez un titre pour l'ouvrir. Les cadrans restent accessibles tout en haut.</div>
+  </section>
+
+  <section id="pendule">
+    <h2><span class="ico">☾</span> Tenir son pendule</h2>
+    <p>Tenez le pendule immobile au-dessus du <strong>centre</strong> du cadran (le médaillon, en bas). Posez une question claire, laissez le pendule osciller librement : il se dirige vers la réponse.</p>
+    <p>Avant une lecture importante, utilisez le module <strong>« Apprendre »</strong> : <em>Suis-je centré ?</em>, <em>Calibrage du pendule</em>, <em>Fiabilité de ma lecture</em>. Le module <strong>Auto-contrôle</strong> vérifie votre neutralité.</p>
+  </section>
+
+  <section id="cadrans">
+    <h2><span class="ico">◑</span> Les cadrans</h2>
+    <p>Chaque cadran est un <strong>demi-cercle</strong> avec un pivot en bas (le pendule y est suspendu) — l'oscillation reste ainsi lisible. On distingue :</p>
+    <table>
+      <tr><th>Type</th><th>À quoi il sert</th><th>Lecture</th></tr>
+      <tr><td>Oui / Non</td><td>Réponse binaire simple</td><td>Le pendule pointe Non · Neutre · Oui</td></tr>
+      <tr><td>Mesure</td><td>Une intensité (vitalité, taux…)</td><td>Échelle <strong>0 → 100</strong> avec zones (Faible → Élevé)</td></tr>
+      <tr><td>Éventail</td><td>Un choix parmi plusieurs</td><td>Secteurs colorés nommés</td></tr>
+      <tr><td>Roue</td><td>Localiser / orienter</td><td>Secteurs répartis en demi-cercle</td></tr>
+    </table>
+    <p>Touchez le cadran pour l'<strong>agrandir</strong> en plein écran (tourné, avec zoom).</p>
+  </section>
+
+  <section id="modes">
+    <h2><span class="ico">✧</span> Tirage intuitif & mode pendule</h2>
+    <ul>
+      <li><strong>Tirage intuitif</strong> : l'app anime le pendule et révèle une réponse — utile pour s'exercer ou débloquer une intuition.</li>
+      <li><strong>Mode pendule</strong> : vous lisez vous-même avec votre pendule physique sur le cadran affiché, puis notez la réponse.</li>
+    </ul>
+    <p>Une <strong>lecture vocale</strong> peut lire à voix haute le cadran (nom, question, repères) — pratique en mains libres.</p>
+  </section>
+
+  <section id="seances">
+    <h2><span class="ico">❖</span> Les séances guidées</h2>
+    <p>Une <strong>séance</strong> enchaîne plusieurs cadrans dans un ordre pensé (localiser → mesurer → rééquilibrer → relire). Chaque module propose au moins une séance, par exemple :</p>
+    <ul>
+      <li><strong>Humain</strong> — <em>Bilan énergétique complet</em> (vitalité → taux vibratoire → 7 chakras → rééquilibrage → relecture avec écart avant/après).</li>
+      <li><strong>Animal</strong> — <em>Séance animale complète</em> (chakras dessus/dessous).</li>
+      <li><strong>Habitat / Géobiologie</strong> — diagnostic d'un lieu et harmonisation.</li>
+      <li><strong>Bilan énergétique, Temps, Mondes subtils, Recherche, Alimentation, Objets, Végétal, Oracle…</strong></li>
+    </ul>
+    <p>À chaque étape : vous <strong>enregistrez</strong> la lecture (et enchaînez) ou vous <strong>passez</strong>. Les étapes « avant » et « après » permettent de mesurer le <strong>Δ</strong> d'un rééquilibrage.</p>
+  </section>
+
+  <section id="clients">
+    <h2><span class="ico">🧑‍🤝‍🧑</span> Clients & séances <span class="pill">Premium</span></h2>
+    <p>Créez des <strong>dossiers clients</strong> et des <strong>sujets</strong> (personne, animal, lieu). Menez des <strong>séances</strong> rattachées, avec mesures avant/après, notes, et une <strong>synthèse</strong> éditable + recommandations.</p>
+    <p>Les <strong>modèles</strong> permettent de rejouer une liste de cadrans fréquente.</p>
+  </section>
+
+  <section id="journal">
+    <h2><span class="ico">📓</span> Journal & courbe d'évolution</h2>
+    <p>Chaque lecture enregistrée alimente un <strong>journal</strong> daté. Pour un suivi (ex. vitalité d'un client), une <strong>courbe d'évolution</strong> montre la progression dans le temps.</p>
+  </section>
+
+  <section id="export">
+    <h2><span class="ico">📤</span> Export & partage</h2>
+    <p>Exportez une séance ou un bilan en <strong>PDF / Excel</strong> pour l'archiver ou le remettre à un client. Le partage d'un tirage en image est prévu pour diffuser une lecture proprement.</p>
+  </section>
+
+  <section id="reglages">
+    <h2><span class="ico">⚙️</span> Réglages</h2>
+    <ul>
+      <li><strong>Langue</strong> — 9 langues (fr, en, de, it, pt, es, sv, no, fi).</li>
+      <li><strong>Thème</strong> clair / sombre, <strong>taille du texte</strong>.</li>
+      <li><strong>Lecture vocale</strong> et sa vitesse.</li>
+      <li><strong>Rappels</strong> (cadran du jour, notifications).</li>
+      <li><strong>Calibrage</strong> du pendule, présentation, versions (journal des nouveautés).</li>
+    </ul>
+  </section>
+
+  <section id="sauvegarde">
+    <h2><span class="ico">🛡️</span> Sauvegarde & restauration</h2>
+    <p>Vos données restent <strong>sur votre appareil</strong> (base locale chiffrable). Vous pouvez créer une <strong>sauvegarde chiffrée</strong> (protégée par une phrase secrète) et la <strong>restaurer</strong> (fusion ou remplacement) — utile pour changer de téléphone.</p>
+    <div class="warn">Les mises à jour <strong>conservent</strong> vos données. Seule une désinstallation efface la base — pensez à une sauvegarde avant.</div>
+  </section>
+
+  <section id="premium">
+    <h2><span class="ico">💎</span> Premium & licence</h2>
+    <p><strong>Gratuit</strong> : consulter les modules et <strong>tous les cadrans</strong>, faire des tirages/lectures éphémères, lire les fiches.</p>
+    <p><strong>Premium</strong> (achat unique) débloque l'<strong>enregistrement</strong> des lectures, les <strong>dossiers clients</strong>, les <strong>séances</strong>, <strong>synthèses</strong>, <strong>exports</strong>, <strong>sauvegarde</strong>, modèles, journal et rappels.</p>
+    <ul>
+      <li><strong>Sur l'App Store / Play</strong> : achat intégré, rattaché à votre compte. Bouton <em>« Restaurer mes achats »</em> après une réinstallation.</li>
+      <li><strong>Version hors-store (APK)</strong> : déverrouillage par <strong>licence à vie</strong>. Saisie une seule fois — elle est <strong>conservée</strong> et re-vérifiée à chaque lancement, y compris après une mise à jour.</li>
+    </ul>
+    <div class="tip">La licence est <strong>à vie</strong> : elle survit aux mises à jour. Après une désinstallation complète, il suffit de ressaisir votre code.</div>
+  </section>
+
+  <section id="maj">
+    <h2><span class="ico">🔄</span> Mises à jour</h2>
+    <ul>
+      <li><strong>App Store / Play</strong> : mises à jour gérées par le store (automatiques).</li>
+      <li><strong>Version hors-store (APK)</strong> : un <strong>bandeau</strong> vous prévient quand une nouvelle version existe et vous mène à la <strong>dernière</strong> — vous pouvez sauter directement à la plus récente, chaque version s'installe par-dessus la précédente en <strong>conservant vos données et votre licence</strong>.</li>
+    </ul>
+  </section>
+
+  <section id="ethique">
+    <h2><span class="ico">❋</span> Bon usage</h2>
+    <p>La radiesthésie est un <strong>outil de ressenti et d'accompagnement</strong>, pas un diagnostic. Radiescoon <strong>ne remplace ni un avis médical, ni vétérinaire, ni professionnel</strong>. Les fiches « Ne pas interpréter » de chaque module rappellent les limites : restez prudent, bienveillant, et orientez vers un professionnel quand c'est nécessaire.</p>
+  </section>
+
+  <section id="faq">
+    <h2><span class="ico">✦</span> FAQ</h2>
+    <h3>Je perds mes données en mettant à jour ?</h3>
+    <p>Non. Les données sont dans une base locale qui <strong>survit aux mises à jour</strong>. Faites tout de même une sauvegarde avant de changer d'appareil.</p>
+    <h3>J'ai deux icônes de l'app / j'ai perdu ma licence.</h3>
+    <p>Cela vient d'une version au mauvais identifiant installée par erreur : désinstallez l'icône « en trop » (vide), gardez l'app d'origine, et installez la dernière version par-dessus. Sur les stores, utilisez « Restaurer mes achats ».</p>
+    <h3>Sans connexion ?</h3>
+    <p>Tout fonctionne <strong>hors-ligne</strong> : cadrans, tirages, séances, journal.</p>
+    <h3>Quel cadran choisir ?</h3>
+    <p>Commencez par « Apprendre » (Oui/Non, 0–100 %), puis explorez le module correspondant à votre question. Une recherche de cadrans arrive pour trouver plus vite parmi les 278.</p>
+  </section>
+
+ </main>
+</div>
+<footer>Radiescoon — par Bengacoon · Guide mis à jour régulièrement · <a href="https://github.com/jdviallat/radiescoon/releases/latest" style="color:var(--gold)">Dernière version</a></footer>
+</body></html>
