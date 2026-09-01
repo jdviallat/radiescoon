@@ -1,7 +1,7 @@
 {
-  "version": "1.11.1",
-  "versionCode": 21,
+  "version": "1.11.2",
+  "versionCode": 22,
   "url": "https://github.com/jdviallat/radiescoon/releases/latest",
-  "notes": "Navigation plus rapide : les fiches des modules se replient (accès direct aux cadrans). Échelles affinées pour les chakras et la compatibilité.",
+  "notes": "Recherche de cadrans, une séance guidée par module, export d'un tirage (PDF/Word/Excel), enregistrement au profil ou à un client, et guide intégré hors-ligne.",
   "mandatory": false
 }
