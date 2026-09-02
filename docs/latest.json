@@ -1,7 +1,7 @@
 {
-  "version": "1.11.2",
-  "versionCode": 22,
+  "version": "1.11.3",
+  "versionCode": 23,
   "url": "https://github.com/jdviallat/radiescoon/releases/latest",
-  "notes": "Recherche de cadrans, une séance guidée par module, export d'un tirage (PDF/Word/Excel), enregistrement au profil ou à un client, et guide intégré hors-ligne.",
+  "notes": "Application entièrement traduite en 9 langues : noms et réponses des 278 cadrans, fiches des modules, fiches détaillées, séances guidées et guide intégré.",
   "mandatory": false
 }
